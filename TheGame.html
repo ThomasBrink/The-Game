@@ -1,0 +1,48 @@
+<html>
+	<body>
+		<script>
+			var ant = 1587
+			var gok;
+
+			alert ("Missie uitleg: Welkom agent 112 Dit wordt je eerste missie uw target is een rijke villa beheerder die door de fbi wordt verdacht van het bezit en verhandelen van zwaar iligale druks en vuurwapens en is in het verleden ook betrokken geweest bij schietpartijen u zult hem moeten uitschakelen")
+
+            alert ("De locatie waar uw target zich bevind is in zijn eigen villa")
+
+            alert ("U zult uw target doden met een sniper van af de vuurtoren")
+
+            alert ("ga naar de vuurtoren")
+
+            var langs = prompt ("U bent bij de vuurtoren aangekomen maar helaas zijn er 2 personeels leden aanwezig u kunt het personeels lid uitschakelen of er langs sneaken hoe wilt u er langs gaan vul in: A: uitschakelen B: langs sneaken")
+
+            if (langs == "langs sneaken"){
+            	alert ("Oke doe voorzichtig")
+            	alert ("Oh nee je moet een code invullen voor de deur")
+            	alert ("We zijn in het systeem gehackt en we hebben de eerste 3 cijfers van de code gevonden dit is: 158_ het laaste getal zul je zelf moeten raden (vul wel de voledige code in)")
+            	for (i=0; i<10; i++){
+				gok = prompt ("wat is de code")
+				if (ant == gok){
+					alert ("goed gedaan de juiste code was 1587 je kunt nu door gaan")
+					break;
+				}
+				else if (gok <= ant){
+					alert ("je getal moet hoger")
+					alert ("probeer opnieuw")
+				}
+				else if (gok >= ant){
+					alert ("je getal moet lager")
+					alert ("probeer opnieuw")
+				}
+
+				if (ant == gok){
+				alert ("U bent boven aangekomen en het personeels lid heeft niks door gehad")
+				alert ("maak je klaar om te schieten")
+				alert ("3")
+				alert ("2")
+				alert ("1")
+				alert ("...")
+				}
+            }
+			}
+		</script>
+	</body>
+</html>
