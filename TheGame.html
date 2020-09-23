@@ -1,10 +1,11 @@
 <html>
 	<body>
 		<script>
+			var linebreak = "<br>";
 			var ant = 1587
 			var gok;
 
-			alert ("Missie uitleg: Welkom agent 112 Dit wordt je eerste missie uw target is een rijke villa beheerder die door de fbi wordt verdacht van het bezit en verhandelen van zwaar iligale druks en vuurwapens en is in het verleden ook betrokken geweest bij schietpartijen u zult hem moeten uitschakelen")
+			alert ("Missie uitleg: Welkom agent 112 Dit wordt je eerste missie uw target is een rijke villa beheerder die door de fbi wordt verdacht van het bezit en verhandelen van zwaar iligale druks en vuurwapens en is in het verleden ook betrokken geweest bij schietpartijen u zult hem moeten uitschakelen Onthoud dat het zeer belangerijk is dat je target uitgeschakeld wordt en dat jij niet gespot wordt")
 
             alert ("De locatie waar uw target zich bevind is in zijn eigen villa")
 
@@ -22,15 +23,14 @@
             	for (i=0; i<10; i++){
 
 				gok = prompt ("wat is de code")
-				
+
 				if (ant == gok){
 					alert ("goed gedaan de juiste code was 1587 je kunt nu door gaan")
 					alert ("U bent boven aangekomen en het personeels lid heeft niks door gehad")
 					alert ("maak je klaar om te schieten")
 					alert ("3")
 					alert ("2")
-					alert ("1")
-					alert ("...")
+					alert ("....")
 					alert ("Pas op er komt een personeels lid aan wat wil je doen als nog schieten of de missie afblazen?")
 
 					var langseind = prompt ("vul in: A:schieten B: afblazen")
@@ -45,9 +45,22 @@
 					alert ("Oh nee je bent gespot door een personeels lid")
 					alert ("Eind: target is geraakt maar het personeels lid heeft de politie ingelicht en heeft je opgepakt")
 					alert ("Uw missie is gefaald: Target: Down jij: Opgepakt")
+					document.write ("Uw keuzes:")
+					document.write(linebreak);
+					document.write ("Langs Sneaken")
+					document.write(linebreak);
+					document.write ("Als nog schieten")
+					document.write(linebreak);
+					document.write(linebreak);
+					document.write ("Uw missie resultaat:")
+					document.write(linebreak);
+					document.write ("Target: Down")
+					document.write(linebreak);
+					document.write ("jij opgepakt")
 				}
 
 				else if (langseind == "afblazen"){
+					alert ("Oke maak dat je daar weg komt!")
 					alert ("Eind: Je hebt je sniper weggestopt en bent weg gelopen hoewel het personeels lid je raar aankeek heeft hij niks door gehad van je poging ")
 					alert ("Je missie is gefaald: Target: Alive jij: weggekomen")
 				}
@@ -63,8 +76,8 @@
 					alert ("probeer opnieuw")
 				}
 
-				if (langseind == "schieten")
-					alert ("test")
+
+				
 				
 
             }
