@@ -1,117 +1,177 @@
 <html>
-	<body>
-		<script>
-			var ant = 1587;
+      <body>
+            <script>
+            var ant = 7;
+            var gok
+            var linebreak = "<br>";
 
 
-			alert ("Missie uitleg: Welkom agent 112 Dit wordt je eerste missie uw target is een rijke villa beheerder die door de fbi wordt verdacht van het bezit en verhandelen van zwaar iligale druks en vuurwapens en is in het verleden ook betrokken geweest bij schietpartijen u zult hem moeten uitschakelen Onthoud dat het zeer belangerijk is dat je target uitgeschakeld wordt en dat jij niet gespot wordt")
+            alert ("Missie uitleg: Welkom agent 112 Dit wordt je eerste missie uw target is een rijke villa beheerder die door de fbi wordt verdacht van het bezit en verhandelen van zwaar ilegale druks en vuurwapens en is in het verleden ook betrokken geweest bij schietpartijen u zult hem moeten uitschakelen Onthoud dat het zeer belangerijk is dat je target uitgeschakeld wordt en dat jij niet gespot wordt.");
 
-            alert ("De locatie waar uw target zich bevind is in zijn eigen villa")
+            alert ("Pro tip: ALs je zo meteen een keuze krijgt hoef je niet het hele word uit te typen je kan ook A of B invullen. Welke optie A of B is word aangeven. Veel succes op uw missie! ")
 
-            alert ("U zult uw target doden met een sniper van af de vuurtoren")
+            alert ("De locatie waar uw target zich bevind is in zijn eigen villa");
 
-            alert ("ga naar de vuurtoren")
+            alert ("U zult uw target doden met een sniper van af de vuurtoren");
 
-            var langs = prompt ("U bent bij de vuurtoren aangekomen maar helaas zijn er 2 personeels leden aanwezig u kunt het personeels lid uitschakelen of er langs sneaken hoe wilt u er langs gaan vul in: A: uitschakelen B: langs sneaken")
+            alert ("Voor dat we naar de vuurtoren gaan moet je de code kraken die je voor de deur moet gebruiken");
 
-            if (langs == "uitschakelen"){
-            	alert ("Oke er staat een personeels lid bij de ingang wil je hem doden of bewusteloos maken")
-            	var langsuit = prompt ("Vul in: bewusteloos of doden")
+            alert ("We hebben in het systeem gekeken en hebben de eerste 3 cijfers voor je dit zijn 158_");
 
-            	if (langsuit == "doden"){
-            		alert ("Oke succes")
-            		alert ("Oke je hebt hem gedood wat wil je met het lichaam doen laten liggen of verstoppen in de kast")
-            		var dodelichaam = prompt ("vul in: verstoppen of laten liggen")
+            for (i=0; i<1000; i++){
+                  var gok = prompt ("Wat denk je dat het laaste getal is? (158_)");
 
-            		if (dodelichaam == "verstoppen"){
-            			alert ("Oke je kunt naar boven gaan")
-            			alert ("U bent boven aangekomen maak je klaar om te schieten")
-            			alert ("3")
-            			alert ("2")
-            			alert ("1")
-            			alert ("....")
-            			alert ("Target Down")
-            			alert ("verlaat de vuurtoren")
-            			alert ("het lijkt er op alsof dat andere personeels lid in de kast gaat kijken ga snel weg")
-            			alert ("Eind: U heeft uw target gedoodt maar het doden lichaam is later gevonden hoewel er geen hard bewijs is dat u de dader bent bent u wel de enige verdachten en wordt er een onderzoek gestart")
-            			alert ("Uw missie is gefaald: Target: Down jij: verdacht")
-            		}
+                  if (gok == ant){
+                        alert ("Je hebt het getal goed geraden! De code was 1587");
+                        break;
+                  }
 
-            		else if (dodelichaam == "laten liggen"){
-            			alert ("Oke ga maar naar boven toe ik heb wel mijn twijfels over je keuze")
-            			alert ("U bent boven aangekomen maak je klaar om te schieten")
-            			alert ("3")
-            			alert ("2")
-            			alert ("....")
-            			alert ("Zijn dat sirenes?")
-            			alert ("Oh nee het lichaam is gevonden en de politie is al ter plaatsen")
-            			alert ("Eind: Je bent opgepakt voor het doden van een personeels lid en loopt kans op twintig jaar cel straf")
-            			alert ("Uw missie is gefaald: Target: Alive jij: opgepakt")
-            		}
-            	}
+                  else if (gok < ant){
+                        alert ("Fout! Je getal moet hoger zijn dan: " + gok);
+                        alert ("Probeer opnieuw.");
 
-            	else if (langsuit == "bewusteloos"){
-            		alert ("Oke succes")
-            		alert ("Oke wil je het lichaam laten liggen of in de kast verstoppen")
-            		var bewustlichaam = prompt ("Vul in: verstoppen of laten liggen")
+                  }
 
-            		if (bewustlichaam == "verstoppen"){
-            			alert ("Oke ga snel naar boven")
-            			alert ("U bent boven aan gekomen maak je klaar om te schieten")
-            			alert ("3")
-            			alert ("2")
-            			alert ("1")
-            			alert ("....")
-            			alert ("Target Down")
-            			alert ("verlaat de vuurtoren")
-            			alert ("Eind: Je hebt je target uitgeschakeld zonder anderen te doden. De bewustelooze man is bij gekomen maar weet niet wat er gebeurt is")
-            			alert ("Uw missie is geslaagd: Target: Down jij: weggekomen")
-            		}
+                  else if (gok > ant){
+                        alert ("Fout! Je getal moet lager zijn dan: " + gok);
+                        alert ("Probeer opnieuw");
+                  }
 
-            		else if (bewustlichaam == "laten liggen"){
-            			alert ("Oke het is uw keuze maar ik had het toch anders gedaan")
-            			alert ("U bent boven aangekomen maak je klaar om te schieten")
-            			alert ("3")
-            			alert ("2")
-            			alert ("....")
-            			alert ("Oh nee een personeels lid heeft de bewustelooze man gevonden maak dat je weg komt voordat de politie je te pakken krijgt")
-            			alert ("Eind: Je bent veilig weggekomen maar je hebt je target niet uitgeschakeld")
-            			alert ("Uw missie is gefaald: Target: Alive jij: weggekomen")
-            		}
 
-            	}
+            }
+
+            alert ("ga naar de vuurtoren");
+
+            var langs = prompt ("U bent bij de vuurtoren aangekomen maar helaas zijn er 2 personeels leden aanwezig u kunt het personeels lid uitschakelen of er langs sneaken hoe wilt u er langs gaan vul in: A: uitschakelen B: langs sneaken");
+            langs = langs.toLowerCase();
+
+            if (langs == "uitschakelen" || langs == "a"){
+                  alert ("Oke er staat een personeels lid bij de ingang wil je hem doden of bewusteloos maken");
+                  var langsuit = prompt ("Vul in: A: bewusteloos of B: doden");
+                  langsuit = langsuit.toLowerCase();
+
+                  if (langsuit == "doden" || langsuit == "b"){
+                        alert ("Oke succes");
+                        alert ("Oke je hebt hem gedood wat wil je met het lichaam doen laten liggen of verstoppen in de kast");
+                        var dodelichaam = prompt ("vul in: A: verstoppen of B: laten liggen");
+                        dodelichaam = dodelichaam.toLowerCase();
+
+                        if (dodelichaam == "verstoppen" || dodelichaam == "a"){
+                              alert ("Oke je kunt naar boven gaan");
+                              alert ("U bent boven aangekomen maak je klaar om te schieten");
+                              alert ("3");
+                              alert ("2");
+                              alert ("1");
+                              alert ("....");
+                              alert ("Target Down");
+                              alert ("verlaat de vuurtoren");
+                              alert ("het lijkt er op alsof dat andere personeels lid in de kast gaat kijken ga snel weg");
+                              alert ("Eind: U heeft uw target gedoodt maar het doden lichaam is later gevonden hoewel er geen hard bewijs is dat u de dader bent bent u wel de enige verdachten en wordt er een onderzoek gestart");
+                              document.write ("Uw missie is gefaald:");
+                              document.write(linebreak);
+                              document.write ("Target: Down");
+                              document.write(linebreak);
+                              document.write ("Jij: verdacht");
+                        }
+
+                        else if (dodelichaam == "laten liggen" || dodelichaam == "b"){
+                              alert ("Oke ga maar naar boven toe ik heb wel mijn twijfels over je keuze");
+                              alert ("U bent boven aangekomen maak je klaar om te schieten");
+                              alert ("3");
+                              alert ("2");
+                              alert ("....");
+                              alert ("Zijn dat sirenes?");
+                              alert ("Oh nee het lichaam is gevonden en de politie is al ter plaatsen");
+                              alert ("Eind: Je bent opgepakt voor het doden van een personeels lid en loopt kans op twintig jaar cel straf");
+                              document.write ("Uw missie is gefaald:");
+                              document.write(linebreak);
+                              document.write ("Target: Alive");
+                              document.write(linebreak);
+                              document.write ("Jij: opgepakt");
+                        }
+                  }
+
+                  else if (langsuit == "bewusteloos" || langsuit == "a"){
+                        alert ("Oke succes");
+                        alert ("Oke wil je het lichaam laten liggen of in de kast verstoppen");
+                        var bewustlichaam = prompt ("Vul in: A: verstoppen of B: laten liggen");
+                        bewustlichaam = bewustlichaam.toLowerCase();
+
+                        if (bewustlichaam == "verstoppen" || bewustlichaam == "a"){
+                              alert ("Oke ga snel naar boven");
+                              alert ("U bent boven aan gekomen maak je klaar om te schieten");
+                              alert ("3");
+                              alert ("2");
+                              alert ("1");
+                              alert ("....");
+                              alert ("Target Down");
+                              alert ("verlaat de vuurtoren");
+                              alert ("Eind: Je hebt je target uitgeschakeld zonder anderen te doden. De bewustelooze man is bij gekomen maar weet niet wat er gebeurt is");
+                              document.write ("Uw missie is geslaagd:");
+                              document.write(linebreak);
+                              document.write ("Target: Down");
+                              document.write(linebreak);
+                              document.write ("Jij: weggekomen");
+                        }
+
+                        else if (bewustlichaam == "laten liggen" || bewustlichaam == "b"){
+                              alert ("Oke het is uw keuze maar ik had het toch anders gedaan");
+                              alert ("U bent boven aangekomen maak je klaar om te schieten");
+                              alert ("3");
+                              alert ("2");
+                              alert ("....");
+                              alert ("Oh nee een personeels lid heeft de bewustelooze man gevonden maak dat je weg komt voordat de politie je te pakken krijgt");
+                              alert ("Eind: Je bent veilig weggekomen maar je hebt je target niet uitgeschakeld");
+                              document.write ("Uw missie is gefaald:");
+                              document.write(linebreak);
+                              document.write ("Target: Alive");
+                              document.write(linebreak);
+                              document.write ("Jij: Weggekomen");
+                        }
+
+                  }
             }
 
 
-            else if (langs == "langs sneaken"){
-            	alert ("Het personeel heeft niks door gehad");
-            	alert ("U bent boven aangekomen maak je klaar om te schieten");
-            	alert ("3");
-            	alert ("2");
-            	alert ("....");
-            	alert ("Pas op er komt een personeels lid aan");
-            	alert ("Wat wil je doen de missie afblazen of als nog schieten");
-            	var langseind = prompt ("Vul in: afblazen of schieten");
+            else if (langs == "langs sneaken" || langs == "b"){
+                  alert ("Het personeel heeft niks door gehad");
+                  alert ("U bent boven aangekomen maak je klaar om te schieten");
+                  alert ("3");
+                  alert ("2");
+                  alert ("....");
+                  alert ("Pas op er komt een personeels lid aan");
+                  alert ("Wat wil je doen de missie afblazen of als nog schieten");
+                  var langseind = prompt ("Vul in: A: afblazen of B: schieten");
+                  langseind = langseind.toLowerCase();
 
-            	if (langseind == "afblazen"){
-            		alert ("Oke maak dat je daar weg komt!")
-            		alert ("Eind: Je hebt je sniper weggestopt en bent weg gelopen hoewel het personeels lid je raar aankeek heeft hij niks door gehad van je poging")
-            		alert ("Uw missie is gefaald: Target: Alive jij: weggekomen")
-            	}
+                  if (langseind == "afblazen" || langseind == "a"){
+                        alert ("Oke maak dat je daar weg komt!");
+                        alert ("Eind: Je hebt je sniper weggestopt en bent weg gelopen hoewel het personeels lid je raar aankeek heeft hij niks door gehad van je poging");
+                        document.write ("Uw missie is gefaald");
+                        document.write(linebreak);
+                        document.write ("Target: Alive");
+                        document.write(linebreak);
+                        document.write ("Jij: weggekomen");
+                  }
 
-            	else if (langseind == "schieten"){
-            		alert ("Oke als jij het zegt")
-            		alert ("3")
-            		alert ("2")
-            		alert ("1")
-            		alert ("...")
-            		alert ("Target Down")
-            		alert ("Oh nee je bent gespot door een personeels lid")
-            		alert ("Eind: Target is geraakt maar het personeels lid heeft je gezien en de politie ingelicht")
-            		alert ("Uw missie is gefaald: Target: Down jij: opgepakt")
-            	}
+                  else if (langseind == "schieten" || langseind == "b"){
+                        alert ("Oke als jij het zegt");
+                        alert ("3");
+                        alert ("2");
+                        alert ("1");
+                        alert ("...")
+                        alert ("Target Down");
+                        alert ("Oh nee je bent gespot door een personeels lid");
+                        alert ("Eind: Target is geraakt maar het personeels lid heeft je gezien en de politie ingelicht");
+                        document.write ("Uw missie is gefaald:");
+                        document.write(linebreak);
+                        document.write ("Target: Down");
+                        document.write(linebreak);
+                        document.write ("Jij: Opgepakt");
+
+                  }
             }
 
-		</script>
-	</body>
+            </script>
+      </body>
 </html>
